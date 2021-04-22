@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// 400x400 frame
+.frame
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 400px
+  height: 400px
+  margin-top: -200px
+  margin-left: -200px
+  border-radius: 2px
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1)
+  overflow: hidden
+  background: linear-gradient(to top right, #eba000 0%, #ffe68a 100%)
+  font-family: "Open Sans", Helvetica, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+// internal div containing the to do-list
+.center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  background-color: white
+  border-radius: 2px
+  width: 220px
+  height: 300px
+  box-shadow: 10px 5px 5px hsl(0, 0%, 65%)
+
+.defaultListStyle
+  list-style-type: none
+  margin-left: -15px
+  line-height: 40px
+  color: hsl(180, 25%, 30%)
+
+// the circle on the right of the screen
+
+.dot
+  height: 12.5px
+  width: 12.5px
+  border-style: solid
+  border-width: 1px
+  border-color: hsl(180, 25%, 30%)
+  background-color: white
+  border-radius: 50%
+  display: inline-block
+  margin-top: 12px
+  margin-right: 20px
+
+
+  &:hover
+    cursor: pointer
+    background-color: yellow
+
+.day
+  font-weight: 700
+  text-align: center
+  font-size: 18px
+  color: hsl(180, 25%, 30%)
+
+.date
+  text-align: center
+  font-size: 13px
+  color: hsl(180, 25%, 30%)
+
+ul > li
+  font-size: 13px
+
+.line
+  width: 60%
+  text-align: center
+
+.check
+  display: inline-block
+  height: 10px
+  width: 4px
+  border-bottom: 2px solid
+  border-right: 2px solid
+  border-color: hsl(180, 25%, 80%)
+  transform: rotate(45deg)
+  margin-top: 12px
+  margin-right: 20px
+
+
+  &edListItem
+    color: hsl(180, 25%, 80%)
